@@ -18,9 +18,10 @@ img {
 }
 
 #slide_box {
-	width: 500px;/*any relative or absolute*/
+	width: 100%;/*any relative or absolute*/
 	position: relative;
 	background-color: #FFF;
+	    height: 100%;
 }
 
 #slide_corner-box {  /* edit these sizes for the default revealing corner size */
@@ -152,7 +153,7 @@ div#bx-pager a img.img-visiting{
 .slider-custom {
 	width: 600px;
 	margin: 0 auto;
-	    height: 400px;
+	    height: 900px;
 }
 
 #bx-pager ul li {
@@ -166,3 +167,69 @@ div#bx-pager a img.img-visiting{
 #bx-pager ul li:nth-child(3n+2) {
     margin-top: 10px;
 }
+
+div.row {
+	float: left;
+}
+
+span.slide-pull-left {
+	    width: 60% !important;
+    float: left;
+    top: 100px;
+    position: relative;
+    left: 50px;
+}
+
+span.slide-pull-right {
+    float: left;
+    width: 40% !important;
+    top: 50px;
+    /* height: 0%; */
+    /* padding-left: 30px; */
+    right: 50px;
+    position: relative;
+}
+
+.img-right {
+    /* width: 40%; */
+    height: 500px !important;
+}
+
+div.row.first-row {
+	height: 900px;
+}
+
+div.thumbnail-scroll {
+	    width: 1374px;
+	    float: left;
+	margin: 0 auto;
+}
+
+div.info {
+	width: 100%;
+	float: left;
+	padding-left: 30px;
+}
+
+div.info div {
+	width: 100%;
+}
+
+div.row.second-row {
+	    float: left;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+
+.slider-detail {
+	margin: 0 auto;
+}
+
+ul.slider-back li img {
+	width: 50%;
+}
+
+/*.slider-detail .bx-pager {
+	display: none;
+}*/

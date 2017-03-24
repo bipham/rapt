@@ -1,237 +1,278 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>Slider</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <!-- jQuery library (served from Google) -->
-    <script src="libs//jquery.min.js"></script>
-    <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.css">
-    <script src="libs/jquery-ui/jquery-ui.js"></script>
-    <!-- bxSlider Javascript file -->
-    <script src="libs/bxslider/jquery.bxslider.min.js"></script>
-    <!-- bxSlider CSS file -->
-    <link href="libs/bxslider/jquery.bxslider.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="row">
-    <div class="col col-md-4 slider-custom">
-      <ul class="bxslider">
-        <li>
-          <div id="slide_effect-back">
-        <div id="slide_box">
-           <img src="./img/blog-3.jpg" class="img-1 img-slider" />
-            <div id="slide_corner-box">
-                <a id="slide_page-tip" href="#">
-                    <div id="slide_corner-contents">
-                        <div id="slide_corner-button">+</div>
-                    </div>
-                </a>
+   <head>
+      <meta charset="UTF-8">
+      <title>Slider</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      <!-- jQuery library (served from Google) -->
+      <script src="libs//jquery.min.js"></script>
+      <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.css">
+      <script src="libs/jquery-ui/jquery-ui.js"></script>
+      <!-- bxSlider Javascript file -->
+      <script src="libs/bxslider/jquery.bxslider.min.js"></script>
+      <!-- bxSlider CSS file -->
+      <link href="libs/bxslider/jquery.bxslider.css" rel="stylesheet" />
+   </head>
+   <body>
+      <div class="row first-row">
+         <div class="col col-md-8 slider-custom">
+            <ul class="bxslider slider-front">
+               <li>
+                  <span id="slide_effect-back" class="slide-pull-left">
+                     <div id="slide_box">
+                        <img src="./img/hinh11.jpg" class="img-1 img-slider img-left" data-slide-offset = "0"/>
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-zoom" data-slide-offset = "0">+</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </span>
+                  <span id="slide_effect-back" class="slide-pull-right">
+                     <div id="slide_box">
+                        <img src="./img/hinh20.jpg" class="img-1 img-slider img-right" data-slide-offset = "1"/>
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-zoom" data-slide-offset = "1">+</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </span>
+                  <span>texxtttt</span>
+               </li>
+               <li>
+                  <div id="slide_effect-back">
+                     <div id="slide_box">
+                        <img src="./img/hinh1.jpg" class="img-2 img-slider" />
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div id="slide_effect-back">
+                     <div id="slide_box">
+                        <img src="./img/hinh2.jpg" class="img-3 img-slider" />
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div id="slide_effect-back">
+                     <div id="slide_box">
+                        <img src="./img/hinh23.jpg" class="img-slider" />
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div id="slide_effect-back">
+                     <div id="slide_box">
+                        <img src="./img/hinh5.jpg" class="img-slider" />
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div id="slide_effect-back">
+                     <div id="slide_box">
+                        <img src="./img/hinh11.jpg" class="img-slider" />
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div id="slide_effect-back">
+                     <div id="slide_box">
+                        <img src="./img/hinh7.jpg" class="img-slider" />
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div id="slide_effect-back">
+                     <div id="slide_box">
+                        <img src="./img/hinh8.jpg" class="img-slider" />
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div id="slide_effect-back">
+                     <div id="slide_box">
+                        <img src="./img/hinh9.jpg" class="img-slider" />
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div id="slide_effect-back">
+                     <div id="slide_box">
+                        <img src="./img/hinh10.jpg" class="img-slider" />
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="row thumbnail-scroll">
+            <div class="col col-md-9 thumbnail-slider">
+               <div id="bx-pager">
+                  <ul class="thumbnail-list-img">
+                     <li class="li-img-0">
+                        <a data-slide-index="0" href="" class="img-test">
+                        <img src="./img/hinh11.jpg" class="img-1 img-slider" data-slide-offset = "0"/>
+<img src="./img/hinh20.jpg" class="img-1 img-slider" data-slide-offset = "1"/>
+                         </a>
+                     </li>
+                     <li class="li-img-1">
+                        <a data-slide-index="1" href="" class="img-test"><img class="img-thumbnail-1 img-drop" src="./img/hinh1.jpg" />
+                        </a>
+                     </li>
+                     <li class="li-img-2">
+                        <a data-slide-index="2" href="" class="img-test"><img class="img-thumbnail-2 img-drop" src="./img/hinh2.jpg" />
+                        </a>
+                     </li>
+                     <li class="li-img-3">
+                        <a data-slide-index="3" href="" class="img-test"><img class="img-thumbnail-3 img-drop" src="./img/hinh23.jpg" />
+                        </a>
+                     </li>
+                     <li class="li-img-4">
+                        <a data-slide-index="4" href="" class="img-test"><img class="img-thumbnail-4 img-drop" src="./img/hinh5.jpg" />
+                        </a>
+                     </li>
+                     <li class="li-img-5">
+                        <a data-slide-index="5" href="" class="img-test"><img class="img-thumbnail-5 img-drop" src="./img/hinh11.jpg" />
+                        </a>
+                     </li>
+                     <li class="li-img-6">
+                        <a data-slide-index="6" href="" class="img-test"><img class="img-thumbnail-6 img-drop" src="./img/hinh7.jpg" />
+                        </a>
+                     </li>
+                     <li class="li-img-7">
+                        <a data-slide-index="7" href="" class="img-test"><img class="img-thumbnail-7 img-drop" src="./img/hinh8.jpg" />
+                        </a>
+                     </li>
+                     <li class="li-img-8">
+                        <a data-slide-index="8" href="" class="img-test"><img class="img-thumbnail-8 img-drop" src="./img/hinh9.jpg" />
+                        </a>
+                     </li>
+                     <li class="li-img-9">
+                        <a data-slide-index="9" href="" class="img-test"><img class="img-thumbnail-9 img-drop" src="./img/hinh10.jpg" />
+                        </a>
+                     </li>
+                  </ul>
+                  <div id="draggable" class="ui-widget-content">
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-        </li>
-        <li>
-           <div id="slide_effect-back">
-        <div id="slide_box">
-           <img src="./img/hinh1.jpg" class="img-2 img-slider" />
-            <div id="slide_corner-box">
-                <a id="slide_page-tip" href="#">
-                    <div id="slide_corner-contents">
-                        <div id="slide_corner-button">+</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-        </li>
-        <li>
-           <div id="slide_effect-back">
-        <div id="slide_box">
-       <img src="./img/hinh2.jpg" class="img-3 img-slider" />
-            <div id="slide_corner-box">
-                <a id="slide_page-tip" href="#">
-                    <div id="slide_corner-contents">
-                        <div id="slide_corner-button">+</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-        </li>
-        <li>
-          <div id="slide_effect-back">
-        <div id="slide_box">
-           <img src="./img/hinh23.jpg" class="img-slider" />
-            <div id="slide_corner-box">
-                <a id="slide_page-tip" href="#">
-                    <div id="slide_corner-contents">
-                        <div id="slide_corner-button">+</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-        </li>
-        <li>
-          <div id="slide_effect-back">
-        <div id="slide_box">
-           <img src="./img/hinh5.jpg" class="img-slider" />
-            <div id="slide_corner-box">
-                <a id="slide_page-tip" href="#">
-                    <div id="slide_corner-contents">
-                        <div id="slide_corner-button">+</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-        </li>
-        <li>
-          <div id="slide_effect-back">
-        <div id="slide_box">
-           <img src="./img/hinh11.jpg" class="img-slider" />
-            <div id="slide_corner-box">
-                <a id="slide_page-tip" href="#">
-                    <div id="slide_corner-contents">
-                        <div id="slide_corner-button">+</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-        </li>
-        <li>
-          <div id="slide_effect-back">
-        <div id="slide_box">
-           <img src="./img/hinh7.jpg" class="img-slider" />
-            <div id="slide_corner-box">
-                <a id="slide_page-tip" href="#">
-                    <div id="slide_corner-contents">
-                        <div id="slide_corner-button">+</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-        </li>
-        <li>
-          <div id="slide_effect-back">
-        <div id="slide_box">
-           <img src="./img/hinh8.jpg" class="img-slider" />
-            <div id="slide_corner-box">
-                <a id="slide_page-tip" href="#">
-                    <div id="slide_corner-contents">
-                        <div id="slide_corner-button">+</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-        </li>
-        <li>
-          <div id="slide_effect-back">
-        <div id="slide_box">
-           <img src="./img/hinh9.jpg" class="img-slider" />
-            <div id="slide_corner-box">
-                <a id="slide_page-tip" href="#">
-                    <div id="slide_corner-contents">
-                        <div id="slide_corner-button">+</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-        </li>
-        <li>
-          <div id="slide_effect-back">
-        <div id="slide_box">
-           <img src="./img/hinh10.jpg" class="img-slider" />
-            <div id="slide_corner-box">
-                <a id="slide_page-tip" href="#">
-                    <div id="slide_corner-contents">
-                        <div id="slide_corner-button">+</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-        </li>
-    </ul>
-
-    </div>
-  </div>
-    
-    <div class="row">
-      <div class="col col-md-9 thumbnail-slider">
-          <div id="bx-pager">
-
-        <ul class="thumbnail-list-img">
-            <li class="li-img-0">
-                <a data-slide-index="0" href=""><img class="img-thumbnail-0 img-drop img-visiting" src="./img/blog-3.jpg" /> </a>
-            </li>
-
-            <li class="li-img-1">
-                <a data-slide-index="1" href=""><img class="img-thumbnail-1 img-drop" src="./img/hinh1.jpg" />
-                </a>
-            </li>
-            <li class="li-img-2">
-                <a data-slide-index="2" href=""><img class="img-thumbnail-2 img-drop" src="./img/hinh2.jpg" />
-                </a>
-            </li>
-
-            <li class="li-img-3">
-                <a data-slide-index="3" href=""><img class="img-thumbnail-3 img-drop" src="./img/hinh23.jpg" />
-                </a>
-            </li>
-
-            <li class="li-img-4">
-                <a data-slide-index="4" href=""><img class="img-thumbnail-4 img-drop" src="./img/hinh5.jpg" />
-                </a>
-            </li>
-
-            <li class="li-img-5">
-                <a data-slide-index="5" href=""><img class="img-thumbnail-5 img-drop" src="./img/hinh11.jpg" />
-                </a>
-            </li>
-
-            <li class="li-img-6">
-                <a data-slide-index="6" href=""><img class="img-thumbnail-6 img-drop" src="./img/hinh7.jpg" />
-                </a>
-            </li>
-
-            <li class="li-img-7">
-                <a data-slide-index="7" href=""><img class="img-thumbnail-7 img-drop" src="./img/hinh8.jpg" />
-                </a>
-            </li>
-
-            <li class="li-img-8">
-                <a data-slide-index="8" href=""><img class="img-thumbnail-8 img-drop" src="./img/hinh9.jpg" />
-                </a>
-            </li>
-
-            <li class="li-img-9">
-                <a data-slide-index="9" href=""><img class="img-thumbnail-9 img-drop" src="./img/hinh10.jpg" />
-                </a>
-            </li>
-        </ul>
-        <div id="draggable" class="ui-widget-content">
-        </div>
-    </div>
+         </div>
       </div>
-    </div>
-
-    <div id="highlighter">highlighter</div>
-    <div id="info-1">highlighter</div>
-    <div id="info-2">highlighter</div>
-
-  <script src="js/index.js"></script>
-</body>
-
+      <div class="row second-row">
+         <div class="col col-md-8 slider-detail">
+            <ul class="bxslider slider-back">
+               <li>
+                  <span id="slide_effect-back" class="slide-pull">
+                     <div id="slide_box">
+                        <img src="./img/hinh11.jpg" class="img-1 img-slider" data-slide-offset = "0"/>
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-exit" data-slide-offset = "0">x</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </span>
+               </li>
+               <li>
+                  <span id="slide_effect-back" class="slide-pull">
+                     <div id="slide_box">
+                        <img src="./img/hinh20.jpg" class="img-1 img-slider" data-slide-offset = "1"/>
+                        <div id="slide_corner-box">
+                           <a id="slide_page-tip" href="#">
+                              <div id="slide_corner-contents">
+                                 <div id="slide_corner-button" class="btn-exit" data-slide-offset = "1">x</div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </span>
+               </li>
+            </ul>
+            <div class="control-slider">
+                <p><span id="slider-prev"></span></p>
+                <span class="box-slide-current"><input type="text" name="current-slider" id="box-slide-index" value=""><span class="total-slide">/20</span></span>
+                <p><span id="slider-next"></span></p>
+            </div>
+         </div>
+      </div>
+      <div class="row info">
+         <div id="highlighter">highlighter</div>
+         <div id="info-1">highlighter</div>
+         <div id="info-2">highlighter</div>
+      </div>
+      <script src="js/index.js"></script>
+   </body>
 </html>
