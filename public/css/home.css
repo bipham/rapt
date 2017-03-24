@@ -1,0 +1,23 @@
+.pull-left.language-bar {
+    width: 10%;
+}
+
+.header-top .pull-right {
+    width: 60%;
+}
+
+header .pull-left ul.list-group-left {
+    list-style: none;
+}
+
+header .pull-left ul.list-group-left li {
+    float: left;
+}
+
+header .pull-right ul.list-group-right {
+    list-style: none;
+}
+
+header .pull-right ul.list-group-right li {
+    float: left;
+}
