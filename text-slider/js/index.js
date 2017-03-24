@@ -146,7 +146,7 @@ $('ul.bxslider.slider-front li .btn-zoom').click(function(){
 });
 
 $('ul.bxslider.slider-back li .btn-exit').click(function(){
-//     var slideOffset = $(this).data('slide-offset');
+    var slideOffset = $(this).data('slide-offset');
 //     var sliderDetail = $('.bxslider.slider-back').bxSlider({
 //     startSlide: slideOffset,
 //     slideMargin: 10,
