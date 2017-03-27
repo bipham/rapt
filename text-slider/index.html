@@ -3,11 +3,13 @@
    <head>
       <meta charset="UTF-8">
       <title>Slider</title>
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="fonts/fonts.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+   <!-- jQuery library (served from Google) -->
       <!-- jQuery library (served from Google) -->
       <script src="libs//jquery.min.js"></script>
       <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.css">
@@ -19,28 +21,28 @@
    </head>
    <body>
       <div class="row first-row">
-         <div class="col col-md-8 slider-custom">
-            <ul class="bxslider slider-front">
+         <div class="slider-custom">
+            <ul class="bxslider slider-overview">
                <li>
-                  <span id="slide_effect-back" class="slide-pull-left">
-                     <div id="slide_box">
-                        <img src="./img/hinh11.jpg" class="img-1 img-slider img-left" data-slide-offset = "0"/>
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-zoom" data-slide-offset = "0">+</div>
+                  <span class="slide_effect-back slide-pull-left">
+                     <div class="slide_box">
+                        <img src="./img/slider11.jpg" class="img-1 img-slider img-left" data-slide-offset = "0"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-zoom" data-slide-offset = "0"><img class="img-rollover" src="rollover.png"></div>
                               </div>
                            </a>
                         </div>
                      </div>
                   </span>
-                  <span id="slide_effect-back" class="slide-pull-right">
-                     <div id="slide_box">
-                        <img src="./img/hinh20.jpg" class="img-1 img-slider img-right" data-slide-offset = "1"/>
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-zoom" data-slide-offset = "1">+</div>
+                  <span class="slide_effect-back slide-pull-right">
+                     <div class="slide_box">
+                        <img src="./img/slider20.jpg" class="img-1 img-slider img-right" data-slide-offset = "1"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-zoom" data-slide-offset = "1"><img class="img-rollover" src="rollover.png"></div>
                               </div>
                            </a>
                         </div>
@@ -49,13 +51,13 @@
                   <span>texxtttt</span>
                </li>
                <li>
-                  <div id="slide_effect-back">
-                     <div id="slide_box">
-                        <img src="./img/hinh1.jpg" class="img-2 img-slider" />
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider01.jpg" class="img-2 img-slider" data-slide-offset = "2"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-zoom" data-slide-offset = "2"><img class="img-rollover" src="rollover.png"></div>
                               </div>
                            </a>
                         </div>
@@ -63,13 +65,13 @@
                   </div>
                </li>
                <li>
-                  <div id="slide_effect-back">
-                     <div id="slide_box">
-                        <img src="./img/hinh2.jpg" class="img-3 img-slider" />
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider02.jpg" class="img-3 img-slider" data-slide-offset = "3"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-zoom" data-slide-offset = "3"><img class="img-rollover" src="rollover.png"></div>
                               </div>
                            </a>
                         </div>
@@ -77,13 +79,13 @@
                   </div>
                </li>
                <li>
-                  <div id="slide_effect-back">
-                     <div id="slide_box">
-                        <img src="./img/hinh23.jpg" class="img-slider" />
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider23.jpg" class="img-slider" data-slide-offset = "4"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-zoom" data-slide-offset = "4"><img class="img-rollover" src="rollover.png"></div>
                               </div>
                            </a>
                         </div>
@@ -91,13 +93,13 @@
                   </div>
                </li>
                <li>
-                  <div id="slide_effect-back">
-                     <div id="slide_box">
-                        <img src="./img/hinh5.jpg" class="img-slider" />
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider05.jpg" class="img-slider" data-slide-offset = "5"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-zoom" data-slide-offset = "5"><img class="img-rollover" src="rollover.png"></div>
                               </div>
                            </a>
                         </div>
@@ -105,13 +107,13 @@
                   </div>
                </li>
                <li>
-                  <div id="slide_effect-back">
-                     <div id="slide_box">
-                        <img src="./img/hinh11.jpg" class="img-slider" />
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider11.jpg" class="img-slider" data-slide-offset = "6"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-zoom" data-slide-offset = "6"><img class="img-rollover" src="rollover.png"></div>
                               </div>
                            </a>
                         </div>
@@ -119,13 +121,13 @@
                   </div>
                </li>
                <li>
-                  <div id="slide_effect-back">
-                     <div id="slide_box">
-                        <img src="./img/hinh7.jpg" class="img-slider" />
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider07.jpg" class="img-slider" data-slide-offset = "7"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-zoom" data-slide-offset = "7"><img class="img-rollover" src="rollover.png"></div>
                               </div>
                            </a>
                         </div>
@@ -133,13 +135,13 @@
                   </div>
                </li>
                <li>
-                  <div id="slide_effect-back">
-                     <div id="slide_box">
-                        <img src="./img/hinh8.jpg" class="img-slider" />
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider08.jpg" class="img-slider" data-slide-offset = "8"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-zoom" data-slide-offset = "8"><img class="img-rollover" src="rollover.png"></div>
                               </div>
                            </a>
                         </div>
@@ -147,13 +149,13 @@
                   </div>
                </li>
                <li>
-                  <div id="slide_effect-back">
-                     <div id="slide_box">
-                        <img src="./img/hinh9.jpg" class="img-slider" />
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider09.jpg" class="img-slider" data-slide-offset = "9"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-zoom" data-slide-offset = "9"><img class="img-rollover" src="rollover.png"></div>
                               </div>
                            </a>
                         </div>
@@ -161,13 +163,13 @@
                   </div>
                </li>
                <li>
-                  <div id="slide_effect-back">
-                     <div id="slide_box">
-                        <img src="./img/hinh10.jpg" class="img-slider" />
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-zoom">+</div>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider10.jpg" class="img-slider" data-slide-offset = "10"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-zoom" data-slide-offset = "10"><img class="img-rollover" src="rollover.png"></div>
                               </div>
                            </a>
                         </div>
@@ -177,69 +179,71 @@
             </ul>
          </div>
          <div class="row thumbnail-scroll">
-            <div class="col col-md-9 thumbnail-slider">
+            <div class="thumbnail-slider">
                <div id="bx-pager">
                   <ul class="thumbnail-list-img">
                      <li class="li-img-0">
                         <a data-slide-index="0" href="" class="img-test">
-                        <img src="./img/hinh11.jpg" class="img-1 img-slider" data-slide-offset = "0"/>
-<img src="./img/hinh20.jpg" class="img-1 img-slider" data-slide-offset = "1"/>
+                            <img src="./img/slider11.jpg" class="img-thumbnail-0 img-drop img-thumbnail-left img-thumb img-visiting" data-slide-offset = "0"/>
+                            <img src="./img/slider20.jpg" class="img-thumbnail-0 img-drop img-thumbnail-right img-thumb img-visiting" data-slide-offset = "1"/>
                          </a>
                      </li>
                      <li class="li-img-1">
-                        <a data-slide-index="1" href="" class="img-test"><img class="img-thumbnail-1 img-drop" src="./img/hinh1.jpg" />
+                        <a data-slide-index="1" href="" class="img-test"><img class="img-thumbnail-1 img-drop img-thumb" src="./img/slider01.jpg" data-slide-offset = "2"/>
                         </a>
                      </li>
                      <li class="li-img-2">
-                        <a data-slide-index="2" href="" class="img-test"><img class="img-thumbnail-2 img-drop" src="./img/hinh2.jpg" />
+                        <a data-slide-index="2" href="" class="img-test"><img class="img-thumbnail-2 img-drop img-thumb" src="./img/slider02.jpg" data-slide-offset = "3"/>
                         </a>
                      </li>
                      <li class="li-img-3">
-                        <a data-slide-index="3" href="" class="img-test"><img class="img-thumbnail-3 img-drop" src="./img/hinh23.jpg" />
+                        <a data-slide-index="3" href="" class="img-test"><img class="img-thumbnail-3 img-drop img-thumb" src="./img/slider23.jpg" data-slide-offset = "4"/>
                         </a>
                      </li>
                      <li class="li-img-4">
-                        <a data-slide-index="4" href="" class="img-test"><img class="img-thumbnail-4 img-drop" src="./img/hinh5.jpg" />
+                        <a data-slide-index="4" href="" class="img-test"><img class="img-thumbnail-4 img-drop img-thumb" src="./img/slider05.jpg" data-slide-offset = "5"/>
                         </a>
                      </li>
                      <li class="li-img-5">
-                        <a data-slide-index="5" href="" class="img-test"><img class="img-thumbnail-5 img-drop" src="./img/hinh11.jpg" />
+                        <a data-slide-index="5" href="" class="img-test"><img class="img-thumbnail-5 img-drop img-thumb" src="./img/slider11.jpg" data-slide-offset = "6"/>
                         </a>
                      </li>
                      <li class="li-img-6">
-                        <a data-slide-index="6" href="" class="img-test"><img class="img-thumbnail-6 img-drop" src="./img/hinh7.jpg" />
+                        <a data-slide-index="6" href="" class="img-test"><img class="img-thumbnail-6 img-drop img-thumb" src="./img/slider07.jpg" data-slide-offset = "7"/>
                         </a>
                      </li>
                      <li class="li-img-7">
-                        <a data-slide-index="7" href="" class="img-test"><img class="img-thumbnail-7 img-drop" src="./img/hinh8.jpg" />
+                        <a data-slide-index="7" href="" class="img-test"><img class="img-thumbnail-7 img-drop img-thumb" src="./img/slider08.jpg" data-slide-offset = "8"/>
                         </a>
                      </li>
                      <li class="li-img-8">
-                        <a data-slide-index="8" href="" class="img-test"><img class="img-thumbnail-8 img-drop" src="./img/hinh9.jpg" />
+                        <a data-slide-index="8" href="" class="img-test"><img class="img-thumbnail-8 img-drop img-thumb" src="./img/slider09.jpg" data-slide-offset = "9"/>
                         </a>
                      </li>
                      <li class="li-img-9">
-                        <a data-slide-index="9" href="" class="img-test"><img class="img-thumbnail-9 img-drop" src="./img/hinh10.jpg" />
+                        <a data-slide-index="9" href="" class="img-test"><img class="img-thumbnail-9 img-drop img-thumb" src="./img/slider10.jpg" data-slide-offset = "10"/>
                         </a>
                      </li>
                   </ul>
-                  <div id="draggable" class="ui-widget-content">
-                  </div>
+               
+                    <img id="draggable" src="slider-active.png">
+                
                </div>
             </div>
          </div>
       </div>
+      <div 
       <div class="row second-row">
-         <div class="col col-md-8 slider-detail">
-            <ul class="bxslider slider-back">
+         <div class="slider-detail-custom">
+            <ul class="bxslider slider-detail">
                <li>
-                  <span id="slide_effect-back" class="slide-pull">
-                     <div id="slide_box">
-                        <img src="./img/hinh11.jpg" class="img-1 img-slider" data-slide-offset = "0"/>
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-exit" data-slide-offset = "0">x</div>
+                  <span class="slide_effect-back" class="slide-pull">
+                     <div class="slide_box">
+                        <img src="./img/slider11.jpg" class="img-1 img-slider" data-slide-offset = "0"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-exit" data-slide-offset = "0"><img class="img-rollover" src="rollover-close.png"></div>
                               </div>
                            </a>
                         </div>
@@ -247,24 +251,156 @@
                   </span>
                </li>
                <li>
-                  <span id="slide_effect-back" class="slide-pull">
-                     <div id="slide_box">
-                        <img src="./img/hinh20.jpg" class="img-1 img-slider" data-slide-offset = "1"/>
-                        <div id="slide_corner-box">
-                           <a id="slide_page-tip" href="#">
-                              <div id="slide_corner-contents">
-                                 <div id="slide_corner-button" class="btn-exit" data-slide-offset = "1">x</div>
+                  <span class="slide_effect-back" class="slide-pull">
+                     <div class="slide_box">
+                        <img src="./img/slider20.jpg" class="img-1 img-slider" data-slide-offset = "1"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-exit" data-slide-offset = "1"><img class="img-rollover" src="rollover-close.png"></div>
                               </div>
                            </a>
                         </div>
                      </div>
                   </span>
+                <span class="content-right-img">
+                    <img src="infobulle.png">
+                </span>
+               </li>
+               <li>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider01.jpg" class="img-2 img-slider" data-slide-offset = "2" />
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                <div class="slide_corner-button btn-exit" data-slide-offset = "2"><img class="img-rollover" src="rollover-close.png"></div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider02.jpg" class="img-3 img-slider" data-slide-offset = "3"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                <div class="slide_corner-button btn-exit" data-slide-offset = "3"><img class="img-rollover" src="rollover-close.png"></div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider23.jpg" class="img-slider" data-slide-offset = "4" />
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-exit" data-slide-offset = "4"><img class="img-rollover" src="rollover-close.png"></div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider05.jpg" class="img-slider" data-slide-offset = "5"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-exit" data-slide-offset = "5"><img class="img-rollover" src="rollover-close.png"></div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider11.jpg" class="img-slider" data-slide-offset = "6"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-exit" data-slide-offset = "6"><img class="img-rollover" src="rollover-close.png"></div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider07.jpg" class="img-slider" data-slide-offset = "7"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-exit" data-slide-offset = "7"><img class="img-rollover" src="rollover-close.png"></div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider08.jpg" class="img-slider" data-slide-offset = "8"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-exit" data-slide-offset = "8"><img class="img-rollover" src="rollover-close.png"></div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider09.jpg" class="img-slider" data-slide-offset = "9"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                 <div class="slide_corner-button btn-exit" data-slide-offset = "9"><img class="img-rollover" src="rollover-close.png"></div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="slide_effect-back">
+                     <div class="slide_box">
+                        <img src="./img/slider10.jpg" class="img-slider" data-slide-offset = "10"/>
+                        <div class="slide_corner-box">
+                           <a class="slide_page-tip" href="#">
+                              <div class="slide_corner-contents">
+                                <div class="slide_corner-button btn-exit" data-slide-offset = "10"><img class="img-rollover" src="rollover-close.png"></div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
                </li>
             </ul>
             <div class="control-slider">
-                <p><span id="slider-prev"></span></p>
-                <span class="box-slide-current"><input type="text" name="current-slider" id="box-slide-index" value=""><span class="total-slide">/20</span></span>
-                <p><span id="slider-next"></span></p>
+                
+               <span id="slider-prev" class="prev-btn active" ><img  src="arrow-left.png"></span>
+                <span class="box-slide-current">1/20</span></span>
+                <span id="slider-next" class="next-btn active" ><img  src="arrow-right.png"></span>
+                <div class="share-socials">
+                    <img src="infobulle-partage.png">
+                </div>
             </div>
          </div>
       </div>
