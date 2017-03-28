@@ -1,7 +1,6 @@
 /**
  * Created by nobikun1412 on 24-Mar-17.
  */
-// $( "#draggable3" ).draggable({ containment: "#containment-wrapper", scroll: false });
 var isHover = false;
 var slideIndex = 0;
 var sliderDetail;
@@ -10,42 +9,41 @@ var oldIndexOverview;
 var slider = $('.bxslider.slider-overview').bxSlider({
     pagerCustom: '#bx-pager',
     startSlide: slideIndex,
-    slideMargin: 10,
+    slideMargin: 50,
     pagerType: 'full',
     controls: false,
     onSlideAfter: function($slideElement, oldIndex, newIndex) {
         var liSelected = 'li-img-' + newIndex;
         var $this = $('li.' + liSelected)
-        chooseSlideImage($this, oldIndex);
+        chooseThumbnailImage($this, oldIndex);
     },
     speed: 10
 });
 
 slider.goToSlide(slideIndex);
 $('ul li').each(function(i) {
-    $(this).attr('rel'); // This is your rel value
+    $(this).attr('rel');
 });
 
-$('ul.bxslider.slider-overview').hover(function() {
+$('.row.first-row').hover(function() {
     if (isHover == false) {
-        alert('www');
         isHover = true;
-    } else return;
+    } else {
+        $('.row.first-row').addClass('hovered');
+    }
+    return;
 });
+
 
 $(function() {
     $("#draggable").draggable({
         axis: 'x',
         scroll: false,
-        // slideWidth: 600,
-        // adaptiveHeight
         containment: '#bx-pager',
         drag: function() {
-            // alert('dasd');
             posX = $(this).position().left;
             posY = $(this).position().top;
             updatePosition(posX, posY);
-            // alert('dasd');
         }
     });
 });
@@ -53,68 +51,34 @@ $(function() {
 function updatePosition(posX, posY) {
     var tmp = document.elementFromPoint(posY, posX);
 }
-$(".img-drop").droppable({
+$(".img-drop-active").droppable({
     accept: '#draggable',
     axis: 'x',
     containment: '#bx-pager',
     over: function(event, ui) {
-        // $('#highlighter').html("You dropped to div ID " + $(this).parent().attr('data-slide-index'));
-        // slideIndex = $(this).parent().attr('data-slide-index');
-        // slider.goToSlide(slideIndex);
         slideIndex = $(this).parent().attr('data-slide-index');
         $(this).addClass('img-visiting');
         slider.reloadSlider({
             pagerCustom: '#bx-pager',
             startSlide: slideIndex,
-            // slideWidth: 100,
-            slideMargin: 10,
+            slideMargin: 50,
             controls: false,
             pagerType: 'full',
             onSlideAfter: function($slideElement, oldIndex, newIndex) {
                 var liSelected = 'li-img-' + newIndex;
                 var $this = $('li.' + liSelected)
-                chooseSlideImage($this, oldIndex);
+                chooseThumbnailImage($this, oldIndex);
             },
             speed: 100
         });
-        // slider.destroySlider();
-        // slider = $('.bxslider.slider-overview').bxSlider({
-        //     pagerCustom: '#bx-pager',
-        //     startSlide: slideIndex,
-        //     // slideWidth: 100,
-        //     slideMargin: 10,
-        //      controls: false, 
-        //     pagerType: 'full', 
-        //     onSlideAfter: function($slideElement, oldIndex, newIndex) {
-        //         var liSelected = 'li-img-' + newIndex;
-        //         var $this = $('li.' + liSelected)
-        //         chooseSlideImage($this, oldIndex);
-        //     },
-        //     speed: 10
-        // });
+        $('#highlighter').html("slide Index: " + slideIndex);
+
     },
     out: function(event, ui) {
-        // $(this).parent().attr('class', '');
         $(this).removeClass('img-visiting');
     },
     drop: function() {
 
-        // slideIndex = $(this).parent().attr('data-slide-index');
-        // // slider.reloadSlider();
-        // slider.destroySlider();
-        // slider = $('.bxslider.slider-overview').bxSlider({
-        //     pagerCustom: '#bx-pager',
-        //     startSlide: slideIndex,
-        //     slideMargin: 10,
-        //     pagerType: 'full', 
-        //     onSlideAfter: function($slideElement, oldIndex, newIndex) {
-        //         var liSelected = 'li-img-' + newIndex;
-        //         var $this = $('li.' + liSelected)
-        //         chooseSlideImage($this, oldIndex);
-        //     },
-        //     speed: 10
-        // });
-        // slider.goToSlide(slideIndex);
     }
 });
 $('ul.thumbnail-list-img li').click(function() {
@@ -125,44 +89,21 @@ $('ul.thumbnail-list-img li').click(function() {
 function chooseThumbnailImage($this, oldIndex) {
     var classTmp = 'img-thumbnail-' + oldIndex;
     var currentIndex = slider.getCurrentSlide();
-    $this.find('img').addClass('img-visiting');
-    $('img.' + classTmp).removeClass('img-visiting');
+    $this.find('.img-drop-active').addClass('img-visiting');
+    $('img.' + classTmp).parents('.img-drop-active').removeClass('img-visiting');
     var posX = $this.position().left;
     var posY = $('#draggable').position().top;
     if (currentIndex != 0) {
-        posX = posX - 20;
+        posX = posX - 12;
     } else posX = posX - 12;
     $('#draggable').animate({
         'top': posY + 'px',
         'left': posX + 'px'
     }, 100, function() {
-        //end of animation.. if you want to add some code here
+
     });
-    $('#highlighter').html("left new: " + oldIndex);
-    $('#info-1').html("left current: " + posY);
-    $('#info-2').html("left: " + posX);
 }
 
-function chooseSlideImage($this, oldIndex) {
-    var classTmp = 'img-thumbnail-' + oldIndex;
-    var currentIndex = slider.getCurrentSlide();
-    $('img.' + classTmp).removeClass('img-visiting');
-    $this.find('img').addClass('img-visiting');
-    var posX = $this.position().left;
-    var posY = $('#draggable').position().top;
-    if (currentIndex != 0) {
-        posX = posX - 20;
-    } else posX = posX - 12;
-    $('#draggable').animate({
-        'top': posY + 'px',
-        'left': posX + 'px'
-    }, 0, function() {
-        //end of animation.. if you want to add some code here
-    });
-    $('#highlighter').html("left new: " + oldIndex);
-    $('#info-1').html("left current: " + posY);
-    $('#info-2').html("left: " + posX);
-}
 
 $('ul.bxslider.slider-overview li .btn-zoom').click(function() {
     var slideOffset = $(this).data('slide-offset');
@@ -170,11 +111,9 @@ $('ul.bxslider.slider-overview li .btn-zoom').click(function() {
     slider.destroySlider();
     sliderDetail = $('.bxslider.slider-detail').bxSlider({
         startSlide: slideOffset,
-        slideMargin: 10,
+        slideMargin: 50,
         controls: false,
         speed: 10,
-        //  nextSelector: '.prev-btn',
-        // prevSelector: '.next-btn',
         pagerType: 'short',
         onSlideAfter: function($slideElement, oldIndex, newIndex) {
             sliderDetailTotal = sliderDetail.getSlideCount();
@@ -184,8 +123,7 @@ $('ul.bxslider.slider-overview li .btn-zoom').click(function() {
     $('.row.first-row').hide();
     $('.row.second-row').show();
     sliderDetailTotal = sliderDetail.getSlideCount();
-    // $('#box-slide-index').val(slideOffset + 1);
-    // $('.total-slide').html('/' + sliderDetailTotal);
+
     updateIndexSlider(slideOffset, sliderDetailTotal);
     sliderDetail.reloadSlider();
     console.log('Id: ' + slideOffset);
@@ -193,32 +131,25 @@ $('ul.bxslider.slider-overview li .btn-zoom').click(function() {
 
 $('ul.bxslider.slider-detail li .btn-exit').click(function() {
     slideIndex = $(this).data('slide-index');
-    //     var sliderDetail = $('.bxslider.slider-detail').bxSlider({
-    //     startSlide: slideOffset,
-    //     slideMargin: 10,
-    //     speed: 10
-    // });
     sliderDetail.destroySlider();
     $('.row.first-row').show();
     $('.row.second-row').hide();
     slider = $('.bxslider.slider-overview').bxSlider({
         pagerCustom: '#bx-pager',
         startSlide: slideIndex,
-        // slideWidth: 100,
-        slideMargin: 10,
+        slideMargin: 50,
         controls: false,
         pagerType: 'full',
         onSlideAfter: function($slideElement, oldIndex, newIndex) {
             var liSelected = 'li-img-' + newIndex;
             var $this = $('li.' + liSelected)
-            chooseSlideImage($this, oldIndex);
+            chooseThumbnailImage($this, oldIndex);
         },
         speed: 10
     });
     var liSelected = 'li-img-' + slideIndex;
     var $this = $('li.' + liSelected)
-    chooseSlideImage($this, oldIndexOverview);
-    // console.log('Id: ' + slideOffset);
+    chooseThumbnailImage($this, oldIndexOverview);
 });
 
 function updateIndexSlider(newIndex, totalIndex) {
@@ -251,3 +182,5 @@ $('.prev-btn').click(function() {
         updateIndexSlider(currentDetail - 1, sliderDetailTotal);
     }
 });
+
+$('.bx-viewport').unbind('click');
